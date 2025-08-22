@@ -12,11 +12,11 @@ from .tools import search_tool
 llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0)
 
 def create_research_agent():
-    """Create the research agent graph based on the article's architecture"""
+    
     
     
     def plan_research(state: AgentState):
-        """Node to plan the research approach"""
+        
         research_query = state["research_query"]
         
         
@@ -52,7 +52,6 @@ def create_research_agent():
         }
     
     def gather_information(state: AgentState):
-        """Node to gather information using search tools"""
         research_plan = state["research_plan"]
         gathered_info = state.get("gathered_information", [])
         iterations = state.get("iterations", 0)
@@ -73,7 +72,6 @@ def create_research_agent():
         }
     
     def evaluate_information(state: AgentState):
-        """Node to evaluate if enough information has been gathered"""
         gathered_info = state["gathered_information"]
         research_query = state["research_query"]
         iterations = state["iterations"]
@@ -133,7 +131,7 @@ def create_research_agent():
                 }
     
     def generate_report(state: AgentState):
-        """Node to generate the final research report"""
+        
         gathered_info = state["gathered_information"]
         research_query = state["research_query"]
         

@@ -106,7 +106,7 @@ with tab1:
                         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M"),
                         "query": research_query,
                         "report": result["research_report"],
-                        "time_taken": "N/A",  # We're not measuring time in this simplified version
+                        "time_taken": "N/A", # TODO: Measure time taken for research
                         "gathered_info": result.get("gathered_information", []),
                         "iterations": result.get("iterations", 0)
                     }
@@ -202,3 +202,9 @@ st.caption("Built with :love by Karagwa Ann Treasure")
 
 if st.session_state.is_running:
     st.toast("Research in progress... This may take a few minutes.", icon="🔍")
+
+#TODO: Scoping of research queries
+#TODO: Implement sharing of research findings
+#TODO: Agent posting to chat
+#TODO: Implement user feedback collection
+#TODO: Memory of research 

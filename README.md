@@ -50,13 +50,6 @@ ResearchAgent is an autonomous research assistant built with Streamlit, LangGrap
 - `GOOGLE_API_KEY` — Google Gemini API key
 - `TAVILY_API_KEY` — Tavily web search API key
 - `LANGSMITH_*` — (Optional) LangSmith tracing keys
-- `OPENAI_API_KEY` — (Optional) For OpenAI integration
-
-## References
-- [LangGraph 101: Build a Deep Research Agent](https://towardsdatascience.com/langgraph-101-lets-build-a-deep-research-agent/)
-- [Streamlit Documentation](https://docs.streamlit.io/)
-- [LangChain Documentation](https://python.langchain.com/)
-- [Tavily API](https://docs.tavily.com/)
 
 ---
 Built by Karagwa. Powered by LangGraph, Google Gemini, Tavily, and Streamlit.

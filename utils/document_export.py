@@ -8,11 +8,11 @@ from reportlab.lib.styles import getSampleStyleSheet
 import re
 
 def export_to_txt(report_content, filename="research_report.txt"):
-    """Export research report to text file"""
+    
     return report_content, filename
 
 def export_to_docx(report_content, filename="research_report.docx"):
-    """Export research report to Word document"""
+    
     doc = Document()
     
     
@@ -44,7 +44,7 @@ def export_to_docx(report_content, filename="research_report.docx"):
     return buffer.getvalue(), filename
 
 def export_to_pdf(report_content, filename="research_report.pdf"):
-    """Export research report to PDF"""
+   
     
     buffer = BytesIO()
     
@@ -76,7 +76,7 @@ def export_to_pdf(report_content, filename="research_report.pdf"):
            
             story.append(Paragraph(line, styles['BodyText']))
     
-    # Build PDF
+    
     doc.build(story)
     
     
